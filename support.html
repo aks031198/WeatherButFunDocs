@@ -26,7 +26,8 @@
         <h1>Support Policy</h1>
         <p class="lede">
           Last updated: April 16, 2026. This page explains how support works for the
-          current version of Weather But Fun and what to include when reporting issues.
+          current version of Weather But Fun and what to include when reporting issues,
+          including widget or Premium subscription problems.
         </p>
       </div>
     </header>
@@ -77,6 +78,7 @@
           <li>Confirm the device has network connectivity for live weather updates.</li>
           <li>Remove and re-add the widget if the widget looks stale after a major app update.</li>
           <li>Check iOS widget and background refresh settings if the widget updates slowly.</li>
+          <li>If a Premium purchase is not reflected yet, reopen the app and try the Restore action in Settings.</li>
           <li>Restart the app after changing system permission settings.</li>
         </ul>
       </section>
@@ -87,8 +89,9 @@
         <ul class="clean-list">
           <li>The app currently requests location access only while you use the app.</li>
           <li>The widget uses the latest cached snapshot saved by the app and shared through the app group.</li>
-          <li>The free experience is designed around a slower refresh rhythm, while the premium-style setting uses a tighter refresh rhythm.</li>
-          <li>The current codebase does not include live StoreKit purchase handling yet.</li>
+          <li>The free experience is designed around a slower refresh rhythm, while Premium refreshes more often.</li>
+          <li>Theme availability can differ between Free and Premium.</li>
+          <li>Monthly and yearly subscriptions are handled through Apple's in-app purchase systems.</li>
         </ul>
       </section>
 
@@ -110,10 +113,14 @@
         <p class="card-label">Billing</p>
         <h2>Subscriptions and purchases</h2>
         <p>
-          The current build includes premium-oriented messaging and settings, but the current
-          codebase does not yet process live in-app purchases. If paid subscriptions are
-          introduced in a future release through Apple, billing and refunds will generally be
-          handled through Apple under Apple's storefront policies.
+          Weather But Fun offers Premium subscriptions through Apple. Billing, cancellation,
+          upgrades, downgrades, and refunds are generally handled by Apple under Apple's
+          storefront policies.
+        </p>
+        <p>
+          If Premium does not unlock after a purchase, confirm you are signed in with the
+          same Apple account used for the purchase, reopen the app, and use the Restore
+          action in the app's settings screen before filing a bug report.
         </p>
       </section>
     </main>

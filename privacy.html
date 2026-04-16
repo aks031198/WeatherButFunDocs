@@ -26,7 +26,8 @@
         <h1>Privacy Policy</h1>
         <p class="lede">
           Effective date: April 16, 2026. This policy describes how the current version of
-          Weather But Fun handles location, weather data, local storage, widgets, and support.
+          Weather But Fun handles location, weather data, local storage, widgets, subscriptions,
+          and support.
         </p>
       </div>
     </header>
@@ -52,17 +53,23 @@
               location access only while you use the app.
             </li>
             <li>
-              Weather and forecast data returned by Apple WeatherKit for the selected or
-              current location.
+              Weather and forecast data returned by Apple Weather via WeatherKit for the
+              current location shown in the app.
             </li>
             <li>
               Place-name information, such as city or region labels, returned through Apple
               geocoding services.
             </li>
             <li>
+              Purchase and subscription information made available by Apple through StoreKit,
+              such as product identifiers, transaction status, and active entitlement state
+              used to determine whether Premium features are unlocked.
+            </li>
+            <li>
               Local app preferences and cached content, including the last saved location,
-              cached weather snapshot, selected visual mood, selected content deck, and a
-              locally stored refresh-tier flag used for free and premium-style refresh timing.
+              cached weather snapshot, selected visual mood, selected content deck, random-theme
+              preference, daily free-theme unlock state, and locally cached subscription status
+              used by the app and widget.
             </li>
           </ul>
         </section>
@@ -73,7 +80,8 @@
             <li>To fetch nearby weather conditions and forecasts.</li>
             <li>To render the app's animated weather scene and text labels.</li>
             <li>To keep the widget in sync with the most recently cached weather snapshot.</li>
-            <li>To store your visual preferences and refresh settings on your device.</li>
+            <li>To unlock or restore Premium features associated with an active subscription.</li>
+            <li>To store your visual preferences and local app state on your device.</li>
             <li>To show legally required weather attribution supplied by Apple WeatherKit.</li>
           </ul>
         </section>
@@ -85,6 +93,11 @@
             services used by the app, including WeatherKit, Core Location, and MapKit or
             Apple geocoding services where applicable. Those services may process the
             information needed to answer the request under Apple's own terms and privacy practices.
+          </p>
+          <p>
+            Subscription purchases, renewals, and restore requests are handled through Apple
+            App Store and StoreKit systems. The developer does not receive your full payment
+            card details or full Apple billing profile.
           </p>
           <p>
             Outside of those platform services, the current app does not include third-party
@@ -102,7 +115,7 @@
             The current app stores its latest weather snapshot and the last saved location
             locally on your device using app-group storage so the main app and widget can
             share the same weather scene. It also stores simple local preferences such as
-            visual selections and refresh-tier state.
+            visual selections, theme unlock state, and cached subscription status.
           </p>
           <p>
             Cached weather data is replaced when newer data is fetched. Local data generally
@@ -116,21 +129,23 @@
           <p>
             The widget reads the most recent weather snapshot that the main app has already
             saved into shared app-group storage. The widget does not ask you for a separate
-            location permission and does not create a separate account or profile.
+            location permission and does not create a separate account or profile. The
+            widget may also read locally cached subscription status and theme state so it can
+            match the main app experience.
           </p>
         </section>
 
         <section>
           <h2>7. Purchases and premium features</h2>
           <p>
-            The current build includes premium-themed messaging and a locally stored
-            refresh-tier flag that changes refresh timing in the app experience. The current
-            codebase does not include live in-app payment processing or live StoreKit
-            purchase handling at this time.
+            The current build offers monthly and yearly Premium subscriptions through Apple.
+            Premium can unlock more frequent weather refreshes, broader theme access, and
+            related paid features available in the app at the time of purchase.
           </p>
           <p>
-            If billing or subscriptions are added in a future release, this privacy policy
-            may be updated to explain what changes.
+            Billing, renewals, cancellation, and refunds are generally handled by Apple
+            under Apple's storefront policies. The app may locally cache subscription or
+            entitlement state so Premium access can be reflected in the app and widget.
           </p>
         </section>
 
@@ -142,6 +157,10 @@
             </li>
             <li>
               You can remove the widget if you do not want weather content shown on your Home Screen.
+            </li>
+            <li>
+              You can manage or cancel your subscription through your Apple account's
+              subscription settings.
             </li>
             <li>
               You can delete the app to remove its locally stored content from your device,

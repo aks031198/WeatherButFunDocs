@@ -11,3 +11,10 @@ Pages included:
 - `index.html`
 - `privacy.html`
 - `support.html`
+
+The published docs currently cover:
+
+- location usage
+- Apple Weather / WeatherKit data usage and attribution
+- local caching shared between the app and widget
+- Apple-managed Premium subscriptions

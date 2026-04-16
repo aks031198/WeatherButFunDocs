@@ -27,7 +27,8 @@
         <p class="lede">
           Weather But Fun turns live weather into a playful visual scene. This site hosts
           the app's privacy policy, support policy, and a short overview of how the app
-          handles weather, location, widgets, and local caching.
+          handles weather, location, widgets, local caching, and Apple-managed premium
+          subscriptions.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="./privacy.html">Read Privacy Policy</a>
@@ -49,9 +50,10 @@
         <h2>What the current app does</h2>
         <ul class="clean-list">
           <li>Requests location only when you use the app and only if you grant permission.</li>
-          <li>Fetches live weather and attribution from Apple WeatherKit.</li>
+          <li>Fetches live weather and attribution from Apple Weather via WeatherKit.</li>
           <li>Caches the last weather snapshot locally so the app and widget can keep working.</li>
-          <li>Stores visual preferences and a local refresh-tier flag on the device.</li>
+          <li>Stores visual preferences, theme state, and local subscription status needed for the app experience.</li>
+          <li>Offers monthly and yearly premium subscriptions managed through Apple's App Store.</li>
           <li>Does not include account creation, ads, or third-party analytics in the current build.</li>
         </ul>
       </section>
@@ -62,7 +64,8 @@
         <p>
           The app uses location to request nearby weather, saves the last fetched weather
           scene locally, and shares that cached snapshot with the widget through the app
-          group. It does not currently run third-party analytics or advertising SDKs.
+          group. Premium subscriptions are processed by Apple, and the app does not
+          currently run third-party analytics or advertising SDKs.
         </p>
         <a class="text-link" href="./privacy.html">View full privacy policy</a>
       </section>
@@ -73,7 +76,7 @@
         <p>
           The support page covers basic troubleshooting, what to include in bug reports,
           and where to file issues for widget updates, permissions, visual glitches, or
-          weather-sync problems.
+          weather-sync problems, including subscription restore issues.
         </p>
         <a class="text-link" href="./support.html">View support policy</a>
       </section>
